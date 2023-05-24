@@ -1,10 +1,10 @@
 package app
 
 import (
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/inbound/cityhdl"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/cityrps"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/services/citysvc"
 	"github.com/go-redis/redis/v8"
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/inbound/cityhdl"
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/outbound/cityrps"
-	"github.com/pasarin-tech/pasarin-core/internal/core/services/citysvc"
 	"gorm.io/gorm"
 
 	"github.com/gofiber/fiber/v2"

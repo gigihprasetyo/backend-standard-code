@@ -9,7 +9,7 @@ import (
 	jwtware "github.com/gofiber/jwt/v2"
 	"github.com/golang-jwt/jwt/v4"
 	gojwt "github.com/golang-jwt/jwt/v4"
-	responseErr "github.com/pasarin-tech/pasarin-core/internal/error"
+	responseErr "github.com/gigihprasetyo/backend-standard-code/internal/error"
 	"github.com/spf13/viper"
 )
 

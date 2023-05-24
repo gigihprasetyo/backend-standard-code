@@ -5,7 +5,7 @@ package mocks
 import (
 	context "context"
 
-	domain "github.com/pasarin-tech/pasarin-core/internal/core/domain"
+	domain "github.com/gigihprasetyo/backend-standard-code/internal/core/domain"
 	mock "github.com/stretchr/testify/mock"
 )
 

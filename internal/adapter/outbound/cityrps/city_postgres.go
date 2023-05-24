@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/pasarin-tech/pasarin-core/internal/core/domain"
-	"github.com/pasarin-tech/pasarin-core/internal/core/ports"
-	"github.com/pasarin-tech/pasarin-core/internal/utils/paging"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/domain"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/ports"
+	"github.com/gigihprasetyo/backend-standard-code/internal/utils/paging"
 	"github.com/pilagod/gorm-cursor-paginator/v2/paginator"
 	"gorm.io/gorm"
 )

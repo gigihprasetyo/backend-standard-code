@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/inbound/cityhdl"
-	"github.com/pasarin-tech/pasarin-core/internal/core/domain"
-	"github.com/pasarin-tech/pasarin-core/internal/core/ports/mocks"
-	"github.com/pasarin-tech/pasarin-core/internal/core/services/citysvc"
-	responseErr "github.com/pasarin-tech/pasarin-core/internal/error"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/inbound/cityhdl"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/domain"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/ports/mocks"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/services/citysvc"
+	responseErr "github.com/gigihprasetyo/backend-standard-code/internal/error"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/stretchr/testify/assert"

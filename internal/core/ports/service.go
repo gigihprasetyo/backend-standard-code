@@ -3,8 +3,8 @@ package ports
 import (
 	"context"
 
-	"github.com/pasarin-tech/pasarin-core/internal/core/domain"
-	"github.com/pasarin-tech/pasarin-core/internal/core/middleware"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/domain"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/middleware"
 )
 
 type (

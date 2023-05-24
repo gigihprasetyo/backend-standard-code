@@ -3,12 +3,12 @@ package cityhdl
 import (
 	"strconv"
 
-	"github.com/pasarin-tech/pasarin-core/internal/core/domain"
-	"github.com/pasarin-tech/pasarin-core/internal/core/ports"
-	"github.com/pasarin-tech/pasarin-core/internal/core/services/citysvc"
-	"github.com/pasarin-tech/pasarin-core/internal/response"
+	"github.com/gigihprasetyo/backend-standard-code/core/services/citysvc"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/domain"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/ports"
+	"github.com/gigihprasetyo/backend-standard-code/internal/response"
 
-	responseErr "github.com/pasarin-tech/pasarin-core/internal/error"
+	responseErr "github.com/gigihprasetyo/backend-standard-code/internal/error"
 
 	"github.com/gofiber/fiber/v2"
 )

@@ -1,15 +1,15 @@
 package app
 
 import (
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/inbound/userhdl"
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/outbound/authrps"
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/outbound/graphfacebookrps"
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/outbound/productrps"
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/outbound/profilerps"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/inbound/userhdl"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/authrps"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/graphfacebookrps"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/productrps"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/profilerps"
 
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/outbound/userbankrps"
-	"github.com/pasarin-tech/pasarin-core/internal/adapter/outbound/userrps"
-	"github.com/pasarin-tech/pasarin-core/internal/core/services/usersvc"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/userbankrps"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/userrps"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/services/usersvc"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"gorm.io/gorm"
