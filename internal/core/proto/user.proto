@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "/proto";
+
+message Owner {
+    string idowner	= 1;
+    string name	= 2;
+    string email = 3;	
+    string password	= 4;
+    string city	=5;
+    string telp =6;	
+    bool delete	=7;
+    string salt	=8;
+    string remember_token=9;	
+    int32 verified_email=10;	
+    int32 verified_telp=11;	
+    string code_verification_telp=12;	
+    bool level_afiliate	=13;
+    string kode_afiliate=14;	
+    string kode_afiliator=15;	
+    int32 persentase_afiliator=16;
+    double saldo_afiliator=17;	
+    bool tutor_number=18;	
+    bool data_generated=19;	
+    int64 created_at=20;	
+    int64 updated_at=21;	
+    int64 expiry_trial_date=22;	
+    bool active	=23;
+    int64 last_login=24;	
+    string email_reminders=25;	
+    string version=26;	
+    int64 date_reset=27;	
+    bool sms_premium=28;	
+    string upload_token=29;	
+    uint64 last_koin_notif=30;	
+    string idphotoprofile=31;	
+    string business_name=32;	
+    string logo_url	= 33;
+    bool is_premium	=34;
+    bool walkthrough=35;	
+    bool subscribe=36;	
+}
+
+message Employee {
+
+}
+
+message Customer{
+    
+}
+
+service MyService {
+  rpc MyMethod(Request) returns (Response);
+}
+
+message Request {
+  string message = 1;
+}
+
+message Response {
+  string reply = 1;
+}

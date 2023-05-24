@@ -1,0 +1,6 @@
+.vscode
+config.yaml
+public/images/*
+!public/images/.gitkeep
+config.yml
+.idea/

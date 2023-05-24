@@ -1,0 +1,2 @@
+# Get Go image from DockerHub.
+FROM golang:1.19 AS api
