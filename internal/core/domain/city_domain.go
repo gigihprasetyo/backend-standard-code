@@ -30,7 +30,7 @@ type CityBasicTransformer struct {
 
 type CityParams struct {
 	ID         uint64
-	Name       *string `query:"name"`
+	Name       string  `query:"name"`
 	ProvinceID *uint64 `query:"province_id"`
 	*PagingQuery
 }

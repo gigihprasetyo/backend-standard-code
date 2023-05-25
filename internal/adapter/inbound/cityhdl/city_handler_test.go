@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gigihprasetyo/backend-standard-code/internal/core/citysvc"
 	"github.com/gigihprasetyo/backend-standard-code/internal/core/domain"
 	"github.com/gigihprasetyo/backend-standard-code/internal/core/ports/mocks"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/services/citysvc"
 	responseErr "github.com/gigihprasetyo/backend-standard-code/internal/error"
 
 	"github.com/gofiber/fiber/v2"

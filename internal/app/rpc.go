@@ -1,15 +1,9 @@
 package app
 
 import (
-	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/inbound/userhdl"
-	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/authrps"
-	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/graphfacebookrps"
-	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/productrps"
-	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/profilerps"
-
-	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/userbankrps"
-	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/userrps"
-	"github.com/gigihprasetyo/backend-standard-code/internal/core/services/usersvc"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/inbound/cityhdl"
+	"github.com/gigihprasetyo/backend-standard-code/internal/adapter/outbound/cityrps"
+	"github.com/gigihprasetyo/backend-standard-code/internal/core/services/citysvc"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"gorm.io/gorm"
@@ -22,14 +16,9 @@ type GrpcServer struct {
 }
 
 func (h *GrpcServer) SetupRpc() {
-	userRep := userrps.NewUserPostgres(h.Postgres)
-	profileRep := profilerps.NewProfilePostgres(h.Postgres)
-	myBankRep := userbankrps.NewUserBankPostgres(h.Postgres)
-	productRep := productrps.NewProductPostgres(h.Postgres)
-	authRepo := authrps.NewAuthGrpcRepository(h.Log)
-	graphFacebookRepo := graphfacebookrps.NewGraphFacebookRepo()
+	cityRep := cityrps.NewCityPostgres(h.Postgres)
 
-	userService := usersvc.NewUserService(h.Log, userRep, profileRep, myBankRep, productRep, authRepo, graphFacebookRepo)
+	cityService := citysvc.NewCityService(h.Log, cityRep)
 
-	userhdl.NewUserGrpc(h.R, userService)
+	cityhdl.NewCityGrpc(h.R, cityService)
 }

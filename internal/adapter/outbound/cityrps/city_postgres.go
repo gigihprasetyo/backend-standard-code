@@ -37,8 +37,8 @@ func (instance *cityPostgres) GetAll(ctx context.Context, params *domain.CityPar
 	q := instance.postgres.Preload("Province")
 
 	// filter by name
-	if params.Name != nil {
-		q = q.Where("LOWER(name) LIKE LOWER(?)", "%"+*params.Name+"%")
+	if params.Name != "" {
+		q = q.Where("LOWER(name) LIKE LOWER(?)", "%"+params.Name+"%")
 	}
 	// filter by province id
 	if params.ProvinceID != nil {
@@ -99,8 +99,8 @@ func (instance *cityPostgres) GetAllWithoutPaginate(ctx context.Context, params 
 	q := instance.postgres.Preload("Province")
 
 	// filter by name
-	if params.Name != nil {
-		q = q.Where("LOWER(name) LIKE LOWER(?)", "%"+*params.Name+"%")
+	if params.Name != "" {
+		q = q.Where("LOWER(name) LIKE LOWER(?)", "%"+params.Name+"%")
 	}
 	// filter by province id
 	if params.ProvinceID != nil {

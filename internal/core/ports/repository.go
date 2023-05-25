@@ -2,10 +2,8 @@ package ports
 
 import (
 	"context"
-	"encoding/json"
 
 	"github.com/gigihprasetyo/backend-standard-code/internal/core/domain"
-	"github.com/olivere/elastic/v7"
 	"github.com/pilagod/gorm-cursor-paginator/v2/paginator"
 )
 
