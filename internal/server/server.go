@@ -10,10 +10,10 @@ import (
 	"runtime"
 	"syscall"
 
-	"auth-services/pkg/logger"
-	"auth-services/pkg/viper"
+	"backend-standard-code/pkg/logger"
+	"backend-standard-code/pkg/viper"
 
-	baseApp "auth-services/internal/app"
+	baseApp "backend-standard-code/internal/app"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/compress"

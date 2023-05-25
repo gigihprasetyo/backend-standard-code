@@ -3,10 +3,8 @@ package cityhdl
 import (
 	"strconv"
 
-	"github.com/gigihprasetyo/backend-standard-code/core/services/citysvc"
 	"github.com/gigihprasetyo/backend-standard-code/internal/core/domain"
 	"github.com/gigihprasetyo/backend-standard-code/internal/core/ports"
-	"github.com/gigihprasetyo/backend-standard-code/internal/response"
 
 	responseErr "github.com/gigihprasetyo/backend-standard-code/internal/error"
 

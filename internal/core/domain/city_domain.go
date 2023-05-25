@@ -14,13 +14,13 @@ type City struct {
 	UpdatedAt  time.Time
 	DeletedAt  gorm.DeletedAt
 
-	Province *Province
+	//Province *Province
 }
 
 type CityTransformer struct {
-	ID                       uint64                   `json:"id"`
-	Name                     string                   `json:"name"`
-	ProvinceBasicTransformer ProvinceBasicTransformer `json:"province,omitempty"`
+	ID   uint64 `json:"id"`
+	Name string `json:"name"`
+	//ProvinceBasicTransformer ProvinceBasicTransformer `json:"province,omitempty"`
 }
 
 type CityBasicTransformer struct {
@@ -37,9 +37,9 @@ type CityParams struct {
 
 func (c *City) ToTransformer() *CityTransformer {
 	return &CityTransformer{
-		ID:                       c.ID,
-		Name:                     c.Name,
-		ProvinceBasicTransformer: *c.Province.ToBasicTransformer(),
+		ID:   c.ID,
+		Name: c.Name,
+		//ProvinceBasicTransformer: *c.Province.ToBasicTransformer(),
 	}
 }
 
